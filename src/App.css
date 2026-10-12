@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    width: 600px;
+    background-color: rgb(115, 157, 144);
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.home h1{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: block;
+    border-bottom: 2px solid rgb(116, 112, 112);
+}
+
+.buttons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buttons button{
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.question-card{
+    width: 100%;
+}
+
+.next-btn{
+    padding: 10px 60px;
+    margin: 30px auto 0px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+.correct{
+    background-color: rgb(30, 142, 30);
+}
+
+.incorrect{
+    background-color: rgb(179, 43, 43);
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+}
+
+.result button{
+    margin: 5px auto;
+    padding: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+    border: none;
+}
+
+button:disabled{
+    color:black ;
+    cursor: no-drop;
+}
+
+@media (max-width:700px) {
+    .home{
+        width: 90%;
+    }
+}
+
+@media (max-width:500px) {
+    .home{
+        padding: 10px;
+    }
+
+    .result button{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:380px) {
+    .home h1{
+        font-size: 25px;
+        padding-bottom:10px ;
+    }
+    .buttons button{
+        font-size: 12px;
+    }
+
+    .next-btn{
+        padding: 5px 30px;
+    }
+
+    .result button{
+        padding: 5px 30px;
+    }
+}
